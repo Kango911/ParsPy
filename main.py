@@ -41,7 +41,7 @@ def export_csv(data):
     header_names = ['№', 'Название', 'Код', 'Цена', 'Что-то']
 
 
-    with open('indexes.csv', 'w', newline='') as csv_file:
+    with open('indexes.csv', 'w', encoding='UTF8', newline='') as csv_file:
         writer = csv.DictWriter(csv_file, delimiter=';', fieldnames=header_names)
         writer.writeheader()
 
